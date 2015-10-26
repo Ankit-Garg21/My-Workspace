@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Your total is 0</string>
+    <string name="app_name">First</string>
+    <string name="add">ADD ONE</string>
+    <string name="sub">SUBTRACT ONE</string>
+    <string name="b1">Test</string>
+    <string name="EText">Type Here</string>
+    <string name="EtextView">Text_View</string>
+    <string name="Tbutton">Toggle Button</string>
+    <string name="email">Email Address</string>
+    <string name="intro">Introduction</string>
+    <string name="send">Send Mail</string>
+
+</resources>

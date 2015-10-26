@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.first.ankit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.first.ankit.FIRSTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="Menu" >
+            <intent-filter>
+                <action android:name="com.first.ankit.Menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.first.ankit.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="Preferences" >
+            <intent-filter>
+                <action android:name="com.first.ankit.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Test"
+            android:label="Test" >
+        </activity>
+        <activity
+            android:name=".Email"
+            android:label="Email" >
+        </activity>
+        <activity
+            android:name=".Camera"
+            android:label="Camera"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Data"
+            android:label="Question" >
+        </activity>
+        <activity
+            android:name=".OpenedClass"
+            android:label="Nxt" >
+        </activity>
+        <activity
+            android:name=".GFX"
+            android:label="Graphics" >
+        </activity>
+        <activity
+            android:name=".GFXSurface"
+            android:label="Graphics" >
+        </activity>
+        <activity
+            android:name=".SoundStuff"
+            android:label="Sounds" >
+        </activity>
+        <activity
+            android:name=".Slider"
+            android:label="Slider" >
+        </activity>
+        <activity
+            android:name=".Tabs"
+            android:label="Tabs" >
+        </activity>
+        <activity
+            android:name=".SimpleBrowser"
+            android:label="My Browser" >
+        </activity>
+        <activity
+            android:name=".Flipper"
+            android:label="Flipper" >
+        </activity>
+        <activity
+            android:name=".SharedPrefs"
+            android:label="SharedPreferences" >
+        </activity>
+        <activity
+            android:name=".InternalData"
+            android:label="Internal Data" >
+        </activity>
+        <activity
+            android:name=".SQLiteExample"
+            android:label="Database" >
+        </activity>
+        <activity
+            android:name=".SQLView"
+            android:label="Menu" >
+            <intent-filter>
+                <action android:name="com.first.ankit.SQLView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Accelerate"
+            android:label="Sensor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TextVoice"
+            android:label="Text To Speech" >
+        </activity>
+        <activity
+            android:name=".GLExample"
+            android:label="OpenGL" >
+        </activity>
+        <activity
+            android:name=".GLCube"
+            android:label="OpenGL" >
+        </activity>
+
+        <receiver
+            android:name=".PointlessWidget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stuff" />
+        </receiver>
+
+        <activity
+            android:name=".WidgetConfig"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
